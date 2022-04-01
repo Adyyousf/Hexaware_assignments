@@ -4,4 +4,4 @@ from  datetime import datetime
 
 todaysdate= datetime.today()
 
-print(f"Today is: {todaysdate.strftime('%m-%d-%y')}")
+print(f"Today is: {todaysdate.strftime('%x')}")
