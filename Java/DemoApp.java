@@ -21,11 +21,12 @@ public class DemoApp{
     }
     public void letsAdd(){
         int a, b;
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        a = myObj.nextInt();
-        System.out.println("Enter a number: ");
-        b = myObj.nextInt();
+        try (Scanner myObj = new Scanner(System.in)) {
+            System.out.println("Enter a number: ");
+            a = myObj.nextInt();
+            System.out.println("Enter a number: ");
+            b = myObj.nextInt();
+        }
         Calculator obj = new Calculator();
         System.out.println("The Sum is: "+obj.add(a,b));
     } 
