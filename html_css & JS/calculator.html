@@ -64,25 +64,25 @@
                     <td><button>%</button></td>
                 </tr>
                 <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
+                    <td><button onclick="display()" id="num">7</button></td>
+                    <td><button onclick="display()" id="num">8</button></td>
+                    <td><button onclick="display()" id="num">9</button></td>
                     <td><button>X</button></td>
                 </tr>
                 <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
+                    <td><button onclick="display()" id="num">4</button></td>
+                    <td><button onclick="display()" id="num">5</button></td>
+                    <td><button onclick="display()" id="num">6</button></td>
                     <td><button>-</button></td>
                 </tr>
                 <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
+                    <td><button onclick="display()" id="num">1</button></td>
+                    <td><button onclick="display()" id="num">2</button></td>
+                    <td><button onclick="display()" id="num">3</button></td>
                     <td><button>+</button></td>
                 </tr>
                 <tr>
-                    <td><button>0</button></td>
+                    <td><button onclick="display()" id="num">0</button></td>
                     <td><button>.</button></td>
                     <td><button>/</button></td>
                     <td><button>=</button></td>
@@ -94,19 +94,10 @@
 </body>
 
 <script>
-    function handleOp(p) {
-        // function to handle operator
-    }
-
-    function handleNum(n) {
-
-        // function to handle number
-
-
-    }
-
-    function handleEqual() {
-
+    function display() {
+        display = document.getElementById("screen");
+        num = document.getElementById("num");
+        
     }
 
 </script>

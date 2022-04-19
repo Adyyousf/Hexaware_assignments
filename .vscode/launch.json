@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Hexaware_assignments_40a3d41c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayIntegers",
+            "request": "launch",
+            "mainClass": "ArrayIntegers",
+            "projectName": "Hexaware_assignments_40a3d41c"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoApp",
+            "request": "launch",
+            "mainClass": "DemoApp",
+            "projectName": "Hexaware_assignments_40a3d41c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Even",
+            "request": "launch",
+            "mainClass": "Even",
+            "projectName": "Hexaware_assignments_40a3d41c"
+        },
+        {
+            "type": "java",
+            "name": "Launch InheritDemo",
+            "request": "launch",
+            "mainClass": "InheritDemo",
+            "projectName": "Hexaware_assignments_40a3d41c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Q3",
+            "request": "launch",
+            "mainClass": "Q3",
+            "projectName": "Hexaware_assignments_40a3d41c"
+        },
+        {
+            "type": "java",
+            "name": "Launch XYZ",
+            "request": "launch",
+            "mainClass": "XYZ",
+            "projectName": "Hexaware_assignments_40a3d41c"
+        }
+    ]
+}

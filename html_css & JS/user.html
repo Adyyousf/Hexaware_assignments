@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+</head>
+
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    div {
+        background-color: wheat;
+        margin: 5%;
+        padding: 5%;
+        align-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        color: black;
+        font-family: cursive;
+    }
+
+
+    view {
+        color: black;
+        font-family: cursive;
+    }
+</style>
+
+<body onload="retrieve()">
+    <div>
+        <h1>User Page</h1>
+
+        Your Id is : 
+        <p id="view"></p>
+        <!-- <button onclick="retrieve()"> Get data </button> -->
+    </div>
+</body>
+
+<script>
+
+    function retrieve() {
+
+        document.getElementById("view").innerHTML = localStorage.getItem("id");
+        localStorage.removeItem("id");
+
+    }
+
+</script>
+
+</html>
