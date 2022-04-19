@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+
+    body {
+        background-color: aqua;
+    }
+
+    div {
+        background-color: wheat;
+        margin: 5%;
+        padding: 5%;
+ 
+        
+        align-content: center;
+        text-align: center;
+    }
+   
+
+</style>
+
+<body>
+<div>
+
+    <img onmouseover="myFunction()" onmouseout="myFunction2()" id="myImg" src="compman.gif" width="214" height="196" border="2px">
+
+</div>
+
+
+<script>
+function myFunction() {
+  document.getElementById("myImg").border = "20";
+  document.getElementById("myImg").height = "294";
+  document.getElementById("myImg").width = "321";
+}
+function myFunction2() {
+  document.getElementById("myImg").border = "2";
+  document.getElementById("myImg").height = "196";
+  document.getElementById("myImg").width = "214";
+}
+</script>
+
+</body>
+</html>

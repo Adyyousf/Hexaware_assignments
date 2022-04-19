@@ -1,0 +1,43 @@
+<head>
+    <script>
+        function XYZ() {
+            let array = ["Raman", "Seema",
+                "Dhara",
+                "Eliza",
+                "Prince",
+                "Ramesha",
+                "Ridhi",
+                 ]
+
+            let newArr = []
+
+
+            for (let index = 0; index < 3; index++) {
+                var x = Math.floor(Math.random() * array.length);
+                newArr.push(array[x]);
+                delete array[x];
+            }
+            console.log(newArr);
+            document.getElementById("X").innerHTML = newArr[0];
+            document.getElementById("Y").innerHTML = newArr[2];
+            document.getElementById("Z").innerHTML = newArr[1];
+        }
+    </script>
+</head>
+
+
+<body>
+
+</body>
+<h1>Winners are :</h1>
+<ul>
+    <li id="X"></li>
+    <li id="Z"></li>
+    <li id="Y"></li>
+</ul>
+
+<br />
+
+<button type="button" onclick=XYZ()>Lucky draw</button>
+
+</html>

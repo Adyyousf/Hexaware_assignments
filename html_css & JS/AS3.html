@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>cal</title>
+
+    <script>
+
+        let codes = ["100", "101", "102", "103"];
+        let qty = [4, 5, 6, 7];
+        let price = [10, 20, 30, 40];
+
+        function doSomething() {
+
+            let total = 0;
+            let code = document.getElementById("code").value;
+            let uqty = parseInt(document.getElementById("qty").value);
+            let i = code.indexOf(code);
+            let a = qty[i];
+
+            if (i >= 0) {
+
+                if (a >= uqty) {
+
+                    qty[i] = qty[i] - uqty;
+                    total = uqty * price[i];
+                }
+
+                else {
+
+                    alert("Sorry! out of inventory!");
+                }
+            }
+
+            else {
+                alert("Unexpected error");
+            }
+            document.getElementById('display').innerHTML = total;
+
+        }
+
+    </script>
+
+    <!-- <style>
+        div {
+
+            background-color: aqua;
+            margin: 150px;
+            width: 400px;
+            text-align: center;
+            padding: 10px;
+            border: 3px solid yellow;
+
+        }
+
+        button {
+            background-color: green;
+            color: black;
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <br>
+
+    <div>
+
+        <label>code</label>
+        <input type="text" placeholder="code" id="code">
+        <br>
+        <br>
+        <label>qty</label>
+        <input type="text" placeholder="qty" id="qty">
+        <br>
+        <br>
+        <button onclick="doSomething()">submit</button>
+        <br>
+        <label for="displayValue">The Total is: <p id="display"></p></label>
+        
+
+    </div>
+
+</body>
+
+
+
+
+</html>
