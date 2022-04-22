@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exam Login</title>
+</head>
+
+<!-- <style>
+    body {
+        background-color: black;
+    }
+
+    div {
+        background-color: wheat;
+        margin: 5%;
+        padding: 5%;
+        align-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        color: black;
+        font-family: cursive;
+    }
+
+    label {
+        color: blue;
+        font-family: cursive;
+    }
+
+    view {
+        color: black;
+        font-family: cursive;
+    }
+</style> -->
+
+<body>
+
+    <div class="abc">
+      <marquee behavior="slide" direction="down"><h2>Online Exam</h2>
+        
+
+        <label><h4>Username</label>
+        <input type="text" id="name"> </h4><br>
+        <label><h4>password </label>
+        <input type="password" id="password"></h4> <br>
+
+        <button type="submit" id="signUp" onclick="signUp()"> Sign Up </button>
+        <button type="submit" id="logIn" onclick="logIn()"> Login </button>
+    </marquee>
+        <p id="view"></p>
+
+    </div>
+
+</body>
+
+<script>
+
+    function signUp() {
+
+        let uname = document.getElementById("name").value;
+        let password = document.getElementById("password").value;
+        localStorage.setItem(uname, password);
+        document.getElementById("view").innerHTML = "signup successful!";
+
+    }
+
+    function logIn() {
+
+        let uname = document.getElementById("name").value;
+        let password = document.getElementById("password").value;
+        check = localStorage.getItem(uname);
+        if (check == password) {
+            document.getElementById("view").innerHTML = "SignIn successful!";
+            window.location = "start.html";
+            localStorage.setItem("id", uname);
+
+        } else {
+            document.getElementById("view").innerHTML = "incorrect Password";
+        }
+
+    }
+
+</script>
+
+</html>

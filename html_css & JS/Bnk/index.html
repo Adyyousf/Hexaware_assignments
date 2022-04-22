@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    div {
+        background-color: wheat;
+        margin: 5%;
+        padding: 5%;
+        align-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        color: black;
+        font-family: cursive;
+    }
+
+    label {
+        color: blue;
+        font-family: cursive;
+    }
+
+    view {
+        color: black;
+        font-family: cursive;
+    }
+</style>
+
+<body>
+
+    <div>
+      <marquee behavior="hover" direction="left"><h1>Welcome to Easy Bank</h1></marquee>
+        
+
+        <label>Account Id</label>
+        <input type="text" id="name"> <br>
+        <br>
+        <label>password </label>
+        <input type="password" id="password"> <br>
+        <br>
+
+        <button type="submit" id="signUp" onclick="signUp()"> Sign Up </button>
+        <button type="submit" id="logIn" onclick="logIn()"> Login </button>
+        <p id="view"></p>
+
+    </div>
+
+</body>
+
+<script>
+
+    function signUp() {
+
+        let uname = document.getElementById("name").value;
+        let password = document.getElementById("password").value;
+        localStorage.setItem(uname, password);
+        document.getElementById("view").innerHTML = "signup successful!";
+
+    }
+
+    function logIn() {
+
+        let uname = document.getElementById("name").value;
+        let password = document.getElementById("password").value;
+        check = localStorage.getItem(uname);
+        if (check == password) {
+            document.getElementById("view").innerHTML = "SignIn successful!";
+            window.location = "user.html";
+            localStorage.setItem("id", uname);
+
+        } else {
+            document.getElementById("view").innerHTML = "incorrect Password";
+        }
+
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice roll</title>
+</head>
+
+<style>
+    * {
+        font-family: cursive;
+        text-align: center;
+    }
+
+    body {
+        background-color: royalblue;
+    }
+
+    button {
+        background-color: chartreuse;
+        border-radius: 6px;
+        border: none;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+        font-size: large;
+
+    }
+
+    #placeholder {
+        height: 100px;
+        width: 100px;
+        padding: 5px;
+        margin: 10px auto;
+        border: 3px solid gray;
+        border-radius: 20px;
+        border-color: olive;
+        font-size: 80px;
+        text-shadow: 1px 1px 2px orange;
+    }
+
+    #myImg {
+        height: 100
+        placeholder = document.getElementById("placeholder");
+            placeholder.innerHTML = number;px;
+        width: 100px;
+        padding: 5px;
+        /* margin-top: 50px auto; */
+        border: 2px solid gray;
+        border-radius: 5px;
+        border-color: olive;
+        /* font-size: 80px; */
+        /* text-shadow:1px 1px 2px orange; */
+    }
+
+    .container {
+        margin: 50px;
+        border: 5px solid gray;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #abc{
+        margin-top: 50px auto;
+        border: 5px solid gray;
+        border-radius: 50px;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <br>
+    <br>
+    <div id="abc">
+        <marquee behavior="alternate" direction="down"> <h1>My Dice Roller</h1> </marquee>
+    </div>
+    <div class="container">
+
+        <img id="myImg" src="dice 1.svg" wid
+        placeholder = document.getElementById("placeholder");
+            placeholder.innerHTML = number;th="50%" height="auto">
+        <p id="placeholder"> </br> </p>
+        <br>
+        <button id="button" onclick="rollDice()">Roll Dice</button>
+
+    </div>
+
+</body>
+
+<script>
+    function rollDice() {
+        let number = Math.floor(Math.random() * 6) + 1;
+        if (number == 1) {
+            document.getElementById("myImg").src = "dice 1.svg";
+            placeholder = document.getElementById("placeholder");
+            placeholder.innerHTML = number;
+        }
+        if (number == 2) {
+            document.getElementById("myImg").src = "dice 2.svg";
+            placeholder = document.getElementById("placeholder");
+            placeholder.innerHTML = number;
+        }
+        if (number == 3) {
+            document.getElementById("myImg").src = "dice 3.svg";
+            placeholder = document.getElementById("placeholder");
+            placeholder.innerHTML = number;
+        }
+        if (number == 4) {
+            document.getElementById("myImg").src = "dice 4.svg";
+            placeholder = document.getElementById("placeholder");
+            placeholder.innerHTML = number;
+        }
+        if (number == 5) {
+            document.getElementById("myImg").src = "dice 5.svg";
+            placeholder = document.getElementById("placeholder");
+            placeholder.innerHTML = number;
+        }
+        if (number == 6) {
+            document.getElementById("myImg").src = "dice 6.svg";
+            placeholder = document.getElementById("placeholder");
+            placeholder.innerHTML = number;
+        }
+        
+    }
+</script>
+
+</html>

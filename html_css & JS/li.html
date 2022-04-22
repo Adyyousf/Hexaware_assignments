@@ -1,0 +1,12 @@
+
+
+let strArr = str.split("")
+const res = [];
+   for(let i = 0; i < strArr.length; i++){
+      if(strArr.indexOf(strArr[i]) !== strArr.lastIndexOf(strArr[i])){
+         if(!res.includes(strArr[i])){
+            res.push(strArr[i]);
+         };
+      };
+   };
+   return res.join(" ");
